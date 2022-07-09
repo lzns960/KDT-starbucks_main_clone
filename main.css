@@ -603,7 +603,7 @@ header .badges .badge>a>img {}
     top: 110px;
     left: 290px;
     transform: translate(-400px, 0);
-    transition: 2s;
+    transition: 1.25s;
     opacity: 0;
 }
 /* 처음에 기본위치를 정하고, 그곳에 trnasform을 줘서 강제로 옮겨놓은 다음에 hover 때 0으로 주면 편하다 */
@@ -617,13 +617,13 @@ header .badges .badge>a>img {}
     top: 200px;
     right: 130px;
     transform: translate(500px, 0);
-    transition: 2s;
+    transition: 1.25s;
     opacity: 0;
 }
 
-.peru .inner:hover.peru__contents {
+.peru .inner:hover .peru__contents {
     transform: translate(0px, 0);
-    opacity: 1;
+    opacity: 1; 
 }
 .peru .inner .peru__contents>img {
     width: 427px;
@@ -826,6 +826,22 @@ header .badges .badge>a>img {}
     top: 140px;
     left: 230px;
 }
+
+.store .inner .store_img1,
+.store .inner .store_img2,
+.store .inner .store_img3,
+.store .inner .store_img4 {
+    opacity: 0;
+    transition: 1s;
+}
+
+.store .inner:hover .store_img1,
+.store .inner:hover .store_img2,
+.store .inner:hover .store_img3,
+.store .inner:hover .store_img4 {
+    opacity: 1;
+}
+
 .store .inner .store_title_1 {
     width: 385px;
     right: 180px;
@@ -901,8 +917,7 @@ footer .inner .footer_menus>ul li:not(.footer_menu_ttl) {
     height: 24px;
 }
 
-footer .inner .copyright {
-}
+footer .inner .copyright {}
 
 footer .inner .copyright .menu {
     display: flex;
