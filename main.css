@@ -312,7 +312,11 @@ header .badges .badge>a>img {}
 
 /* VISUAL */
 .visual {
+<<<<<<< HEAD
     background-image: url("../KDT-starbucks_main_clone/images/visual_bg.jpeg");
+=======
+    background-image: url("./images/visual_bg.jpeg");
+>>>>>>> a88602c685f7972061a0f77dc4dad629e8fb7243
     background-repeat: no-repeat;
     background-position: center;
     margin-top: 120px;
@@ -562,7 +566,11 @@ header .badges .badge>a>img {}
 /* PERU */
 .peru {
     position: relative; /* bg 호랑이와 새의 위치 지정하기 위함*/
+<<<<<<< HEAD
     background-image: url(../KDT-starbucks_main_clone/images/peru_bg.jpg);
+=======
+    background-image: url(./images/peru_bg.jpg);
+>>>>>>> a88602c685f7972061a0f77dc4dad629e8fb7243
     height: 570px;
     overflow: hidden; /* 짤리는 것이 좋으니 overflow hideen을 쓰기! */
 }
@@ -573,7 +581,11 @@ header .badges .badge>a>img {}
     left: 0;
     bottom: 0;
     display: block;
+<<<<<<< HEAD
     background-image: url(../KDT-starbucks_main_clone/images/peru_bg_left.png);
+=======
+    background-image: url(./images/peru_bg_left.png);
+>>>>>>> a88602c685f7972061a0f77dc4dad629e8fb7243
     background-size: cover; /* cover는 긴 축에 맞춰 늘린다. contain은 짧은 축에 맞춤 */
     background-repeat: no-repeat; 
     width: 330px;
@@ -586,7 +598,11 @@ header .badges .badge>a>img {}
     right: 0;
     bottom: 0;
     display: block;
+<<<<<<< HEAD
     background-image: url(../KDT-starbucks_main_clone/images/peru_bg_right.png);
+=======
+    background-image: url(./images/peru_bg_right.png);
+>>>>>>> a88602c685f7972061a0f77dc4dad629e8fb7243
     background-size: cover;
     background-repeat: no-repeat;
     width: 320px;
@@ -603,7 +619,7 @@ header .badges .badge>a>img {}
     top: 110px;
     left: 290px;
     transform: translate(-400px, 0);
-    transition: 2s;
+    transition: 1.25s;
     opacity: 0;
 }
 /* 처음에 기본위치를 정하고, 그곳에 trnasform을 줘서 강제로 옮겨놓은 다음에 hover 때 0으로 주면 편하다 */
@@ -617,13 +633,13 @@ header .badges .badge>a>img {}
     top: 200px;
     right: 130px;
     transform: translate(500px, 0);
-    transition: 2s;
+    transition: 1.25s;
     opacity: 0;
 }
 
-.peru .inner:hover.peru__contents {
+.peru .inner:hover .peru__contents {
     transform: translate(0px, 0);
-    opacity: 1;
+    opacity: 1; 
 }
 .peru .inner .peru__contents>img {
     width: 427px;
@@ -638,7 +654,11 @@ header .badges .badge>a>img {}
 /* INDONESIA */
 .indonesia {
     position: relative;
+<<<<<<< HEAD
     background-image: url(../KDT-starbucks_main_clone/images/indonesia_bg.jpg);
+=======
+    background-image: url(./images/indonesia_bg.jpg);
+>>>>>>> a88602c685f7972061a0f77dc4dad629e8fb7243
     height: 400px;
     overflow: hidden;
 }
@@ -648,7 +668,11 @@ header .badges .badge>a>img {}
     left: -200px;
     bottom: 0;
     display: block;
+<<<<<<< HEAD
     background-image: url(../KDT-starbucks_main_clone/images/indonesia_bg_left.png);
+=======
+    background-image: url(./images/indonesia_bg_left.png);
+>>>>>>> a88602c685f7972061a0f77dc4dad629e8fb7243
     background-size: cover;
     background-repeat: no-repeat; 
     width: 373px;
@@ -661,7 +685,11 @@ header .badges .badge>a>img {}
     right: -300px;
     bottom: 0;
     display: block;
+<<<<<<< HEAD
     background-image: url(../KDT-starbucks_main_clone/images/indonesia_bg_right.png);
+=======
+    background-image: url(./images/indonesia_bg_right.png);
+>>>>>>> a88602c685f7972061a0f77dc4dad629e8fb7243
     background-size: cover;
     background-repeat: no-repeat; 
     width:563px;
@@ -693,7 +721,11 @@ header .badges .badge>a>img {}
 /* FAVORITE */
 .favorite {
     position: relative;
+<<<<<<< HEAD
     background-image: url(../KDT-starbucks_main_clone/images/fav_bg.jpg);
+=======
+    background-image: url(./images/fav_bg.jpg);
+>>>>>>> a88602c685f7972061a0f77dc4dad629e8fb7243
     background-attachment: fixed; /* 배경 고정시키기 */
     background-size: cover;
     background-repeat: no-repeat;
@@ -756,7 +788,11 @@ header .badges .badge>a>img {}
 /* MAGAZINE */
 .magazine {
     position: relative;
+<<<<<<< HEAD
     background-image: url(../KDT-starbucks_main_clone/images/magazine_bg.png);
+=======
+    background-image: url(./images/magazine_bg.png);
+>>>>>>> a88602c685f7972061a0f77dc4dad629e8fb7243
     background-repeat: no-repeat;
     overflow: hidden;
     background-position: center;
@@ -793,7 +829,11 @@ header .badges .badge>a>img {}
 /* STORE */
 .store {
     position: relative;
+<<<<<<< HEAD
     background-image: url(../KDT-starbucks_main_clone/images/store_bg.jpg);
+=======
+    background-image: url(./images/store_bg.jpg);
+>>>>>>> a88602c685f7972061a0f77dc4dad629e8fb7243
     background-size: cover;
     background-repeat: no-repeat;
     overflow: hidden;
@@ -826,6 +866,7 @@ header .badges .badge>a>img {}
     top: 140px;
     left: 230px;
 }
+<<<<<<< HEAD
 .store .inner .store_img4,
 .store .inner .store_img3,
 .store .inner .store_img2,
@@ -840,6 +881,24 @@ header .badges .badge>a>img {}
     opacity: 1;
     transition: 2s;
 }
+=======
+
+.store .inner .store_img1,
+.store .inner .store_img2,
+.store .inner .store_img3,
+.store .inner .store_img4 {
+    opacity: 0;
+    transition: 1s;
+}
+
+.store .inner:hover .store_img1,
+.store .inner:hover .store_img2,
+.store .inner:hover .store_img3,
+.store .inner:hover .store_img4 {
+    opacity: 1;
+}
+
+>>>>>>> a88602c685f7972061a0f77dc4dad629e8fb7243
 .store .inner .store_title_1 {
     width: 385px;
     right: 180px;
@@ -915,8 +974,7 @@ footer .inner .footer_menus>ul li:not(.footer_menu_ttl) {
     height: 24px;
 }
 
-footer .inner .copyright {
-}
+footer .inner .copyright {}
 
 footer .inner .copyright .menu {
     display: flex;
