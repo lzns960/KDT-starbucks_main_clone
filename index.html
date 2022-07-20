@@ -35,8 +35,13 @@
     <!-- Font Google -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
-    <!-- MAIN CSS -->
-    <link rel="stylesheet" href="main.css">
+    <!-- SWIPER  -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+    <!-- MAIN -->
+    <link rel="stylesheet" href="./main.css">
+    <script defer src="./main.js"></script>
 </head>
 
 <body>
@@ -426,18 +431,23 @@
             <div class="inner">
                 <div class="inner__left">
                     <h1>공지사항</h1>
-                    <div class="swiper_container">My DT Pass 관련 서비스 점검 안내</div>
-                    <a href="#"><span class="material-symbols-outlined">
-                        add_circle
-                    </span></a>
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">My DT Pass 이용 안내</div>
+                            <div class="swiper-slide">My DT Pass 관련 서비스 점검 안내</div>
+                            <div class="swiper-slide">시스템 개선 및 점검 안내</div>
+                            <div class="swiper-slide">전자 영수증 서비스 서비스 점검 안내</div>
+                            <div class="swiper-slide">스타벅스 e-Gift Card 구매 가능 금액 안내</div>
+                        </div>
+                    </div>
+                    <a href="#"><span class="material-symbols-outlined">add_circle</span></a>
                 </div>
                 <div class="inner__right">
                     <h1>스타벅스 프로모션</h1>
-                    <a href="#"><span class="material-symbols-outlined">
-                        expand_circle_down
-                    </span></a>
+                    <a href="#"><span class="material-symbols-outlined">expand_circle_down</span></a>
                 </div>
             </div>
+            
         </div>
     </section>
 

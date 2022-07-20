@@ -174,7 +174,7 @@ header .inner .search {
 }
 
 header .inner .search input {
-    width: 40px;
+    width: 34px;
     height: 34px;
     transition: width 0.4s;
     font-size: 16px;
@@ -274,9 +274,10 @@ header .main_menu .item .item__contents .item__contents__menu .inner>li>ul>li:ho
 /* item__contents__additional */
 
 header .inner .main_menu .item .item__contents .item__contents__additional {
-    background-image: url("../KDT-starbucks_main_clone/images/main_menu_pattern.jpg");
+    background-image: url("./images/main_menu_pattern.jpg");
     width: 100%;
     padding: 20px 0;
+    
 }
 
 header .inner .main_menu .item .item__contents .item__contents__additional .inner {}
@@ -448,14 +449,24 @@ header .badges .badge>a>img {}
     font-weight: bold;
     font-size: 16px;
 }
-
-.notice .notice_line .inner .inner__left .swiper_container {
+.notice .inner .inner__left .swiper {
     position: absolute;
+    height: 62px;
     left: 80px;
-    flex-grow: 1; /* 공지사항을 제외한 나머지 공간을 차지하게 하기 위함 */
     font-size: 14px;
 }
-
+.notice .inner .inner__left .swiper .swiper-wrapper .swiper-slide {
+    line-height: 62px;
+    height: 62px;
+}
+/*
+.notice .notice_line .inner .inner__left .swiper-slide {
+    position: absolute;
+    left: 80px;
+    flex-grow: 1; /* 공지사항을 제외한 나머지 공간을 차지하게 하기 위함 
+    font-size: 14px;
+}
+*/
 .notice .notice_line .inner .inner__left a {
     position: absolute; /* a 태그가 span 태그를 감싸고 있으니까 a 태그로 위치를 조정 */
     right: 20px; 
