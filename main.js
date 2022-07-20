@@ -16,10 +16,8 @@ searchInputEl.addEventListener("blur", function(){
 
 //SWIPER
 //NOTICE >> SWIPER
-const swiperNotice = new Swiper("notice .inner .inner__left .swiper", {
-    direction: "vertical", //문자열 형식으로 줘야 한다.
-    loop: true,
-    autoplay: true,
-});
-
-console.log(swiperNotice);
+const swiperNotice = new Swiper (".notice .notice_line .swiper", {
+    direction: "vertical", //문자열 형식으로 줘야 한다. 방향
+    loop: true, 
+    autoplay: true, 
+})
