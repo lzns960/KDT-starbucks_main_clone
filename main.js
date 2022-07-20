@@ -21,3 +21,25 @@ const swiperNotice = new Swiper (".notice .notice_line .swiper", {
     loop: true, 
     autoplay: true, 
 })
+
+//PROMOTION >> SWIPER
+// SWIPER PROMOTION
+const swiperPromotion = new Swiper(".promotion .swiper", {
+    direction: "horizontal", // 기본 값: 수평
+    slidesPerView: 3, // 한번에 보여줄
+    spaceBetween: 10, // 아이템간 거리
+    centeredSlides: true, // 슬라이드 센터 여부
+    loop: true, // 루프 여브
+    autoplay: {// 자동 재생, 변경 시간 설정
+        delay: 5000, // 1000이 1초 
+        disableOnInteraction: false, //클릭하고 왔다갔다하는 액션을 끄게하는 것 (원래 swiper의 기능)
+    },
+    pagination: {
+        el: ".promotion .swiper-pagination",
+        clickable: true, 
+    },
+    navigation: {
+        prevEl: ".promotion .swiper-button-prev",
+        nextEl: ".promotion .swiper-button-next",
+    } 
+});
