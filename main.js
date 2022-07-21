@@ -43,3 +43,61 @@ const swiperPromotion = new Swiper(".promotion .swiper", {
         nextEl: ".promotion .swiper-button-next",
     } 
 });
+
+//SWIPER PROMOTION CONTROL AUTOPLAY 
+function controlAutoplay() {
+    if(swiperPromotion.autoplay.running === ture) {
+        //autoplay가 실행중인지 아닌지 true 돌아가는 거, false 멈춘 것  컨디션에 따라 autoplay를 걸어준다. 
+        swiperPromotion.autoplay.stop();
+    } else {
+        swiperPromotion.autoplay.start();
+    }
+}
+
+//TOGGLE PROMOTION 
+const promotionEl = document.querySelector(".promotion");
+const promotionToggleBtn  = document.querySelector(".toggle-promotion");
+const promotionToggleIcon = document.querySelector(".toggle-promotion span");
+
+promotionToggleBtn.addEventListener("click", function(){
+    if(promotionEl.classList.contains("hide")){
+        promotionEl.classList.remove("hide");
+    }else {
+        promotionEl.classList.add("hide");
+    }
+
+    if(promotionToggleIcon.style.transform === "rotate(180deg)") {
+        promotionToggleIcon.style.transform = "rotate(0deg)";
+    }else {
+        promotionToggleIcon.style.transform = "rotate(180deg)";
+    }
+})
+//SCROLL ANIMATION 
+let scrollYpos;
+window.addEventListener("scroll", function () {
+    scrollYpos = window.scrollY; //스크롤정보 가져오기
+    console.log(scrollYpos);
+
+    if (scrollYpos > 300) {
+        const peruAnimate = document.querySelector(".peru");
+        peruAnimate.classList.add("animate");
+    }
+    if (scrollYpos > 1000) {
+        document.querySelector(".indonesia").classList.add("animate");
+    }
+    if (scrollYpos > 1300) {
+        document.querySelector(".favorite").classList.add("animate");
+    }
+    if (scrollYpos > 2100) {
+        document.querySelector(".magazine").classList.add("animate");
+    }
+    if (scrollYpos > 2500) {
+        document.querySelector(".store").classList.add("animate");
+    }
+})
+
+window.onload = () => {
+    const visualInner = document.querySelector(".visual .inner");
+    visualInner.classList.add("animate");
+};
+

@@ -377,26 +377,26 @@ header .badges .badge>a>img {}
 }
 
 /* visual 애니메이션 효과 */
-.visual .inner:hover .slogan {
+.visual .inner.animate .slogan {
     opacity: 1;
 }
 
-.visual .inner:hover .slogan .btn {
+.visual .inner.animate .slogan .btn {
     opacity: 1;
     transition-delay: 1.6s;
 }
 
-.visual .inner:hover .image.item_1 {
+.visual .inner.animate .image.item_1 {
     opacity: 1;
     transition-delay: .4s;
 }
 
-.visual .inner:hover .image.item_2 {
+.visual .inner.animate .image.item_2 {
     opacity: 1;
     transition-delay: .8s;
 }
 
-.visual .inner:hover .image.item_3 {
+.visual .inner.animate .image.item_3 {
     opacity: 1;
     transition-delay: 1.2s;
 }
@@ -507,11 +507,20 @@ header .badges .badge>a>img {}
     font-size: 36px;
     vertical-align: bottom;
 }
+.notice .inner .inner__right  .toggle-promotion span {
+    transition: 0.5s;
+}
 /* PROMOTION */
 .notice .promotion {
     position: relative;
     height: 659px;
     background-color: #f6f5ef;
+    overflow: hidden;
+    transition: height 0.4s;
+} 
+
+.notice .promotion.hide { 
+    height: 0px; 
 }
 
 .notice .promotion .swiper {
@@ -688,7 +697,7 @@ header .badges .badge>a>img {}
     opacity: 0;
 }
 /* 처음에 기본위치를 정하고, 그곳에 trnasform을 줘서 강제로 옮겨놓은 다음에 hover 때 0으로 주면 편하다 */
-.peru .inner:hover .img_product {
+.peru.animate .inner .img_product {
     transform: translate(0px, 0);
     opacity: 1;
 }
@@ -702,7 +711,7 @@ header .badges .badge>a>img {}
     opacity: 0;
 }
 
-.peru .inner:hover .peru__contents {
+.peru.animate .inner .peru__contents {
     transform: translate(0px, 0);
     opacity: 1; 
 }
@@ -734,6 +743,7 @@ header .badges .badge>a>img {}
     background-repeat: no-repeat; 
     width: 373px;
     height: 277px;
+    opacity: 0;
 }
 
 .indonesia::after {
@@ -742,11 +752,12 @@ header .badges .badge>a>img {}
     right: -300px;
     bottom: 0;
     display: block;
-ound-image: url(./images/indonesia_bg_right.png);
+    background-image: url(./images/indonesia_bg_right.png);
     background-size: cover;
     background-repeat: no-repeat; 
     width:563px;
     height:305px;
+    opacity: 0;
 }
 
 .indonesia .inner {}
@@ -754,6 +765,7 @@ ound-image: url(./images/indonesia_bg_right.png);
 .indonesia .inner .indonesia__img {
     position:absolute;
     left: -350px;
+    opacity: 0;
 }
 
 .indonesia .inner .indonesia__title {
@@ -761,6 +773,19 @@ ound-image: url(./images/indonesia_bg_right.png);
     top: 120px;
     width: 496px;
     left: 100px;
+}
+
+
+.indonesia.animate .inner .indonesia__img {
+    transition: 1.5s;
+    opacity: 1;
+    transition-delay: 0.8s;
+}
+
+.indonesia.animate::before,
+.indonesia.animate::after {
+    opacity: 1;
+    transition: 1.5s;
 }
 
 .indonesia .inner .btn.btn--gold {
@@ -805,8 +830,8 @@ ound-image: url(./images/indonesia_bg_right.png);
     transform: translate(-600px, 0);
     opacity: 0;
 }
-.favorite .inner:hover .fav_title_1,
-.favorite .inner:hover .fav_title_2 {
+.favorite.animate .inner .fav_title_1,
+.favorite.animate .inner .fav_title_2 {
     transform: translate(0px, 0);
     opacity: 1;
 }
@@ -825,7 +850,7 @@ ound-image: url(./images/indonesia_bg_right.png);
     opacity: 0;
 }
 
-.favorite .inner:hover .btn.btn--white {
+.favorite.animate .inner .btn.btn--white {
     opacity: 1;
     transition: 4s;
 }
@@ -861,7 +886,7 @@ ound-image: url(./images/indonesia_bg_right.png);
     transition: 2s;
 }
 
-.magazine .inner:hover .magazine_img {
+.magazine.animate .inner .magazine_img {
     opacity: 1;
 }
 
@@ -916,10 +941,10 @@ ound-image: url(./images/indonesia_bg_right.png);
     transition: 1s;
 }
 
-.store .inner:hover .store_img1,
-.store .inner:hover .store_img2,
-.store .inner:hover .store_img3,
-.store .inner:hover .store_img4 {
+.store.animate .inner .store_img1,
+.store.animate .inner .store_img2,
+.store.animate .inner.store_img3,
+.store.animate .inner .store_img4 {
     opacity: 1;
 }
 
@@ -946,9 +971,9 @@ ound-image: url(./images/indonesia_bg_right.png);
     transform: translate(500px, 0);
     opacity: 0;
 }
-.store .inner:hover .store_title_1,
-.store .inner:hover .store_title_2,
-.store .inner:hover .btn.btn--black {
+.store.animate .inner .store_title_1,
+.store.animate .inner .store_title_2,
+.store.animate .inner .btn.btn--black {
     transform: translate(0px, 0);
     opacity: 1;
 }
